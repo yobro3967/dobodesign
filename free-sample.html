@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Free Sample | DOBODESIGN</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <link rel="stylesheet" href="styles.css">
+    
+    <style>
+        .sample-page-wrapper {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8rem 2rem 4rem; /* Accounts for fixed nav */
+        }
+        .sample-card {
+            width: 100%;
+            max-width: 500px;
+            padding: 3rem;
+            text-align: center;
+        }
+        .sample-img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: var(--radius-md);
+            margin: 0 auto 2rem;
+            display: block;
+            border: 1px solid rgba(255, 255, 0, 0.1);
+            background: #ffffff; /* Contrast for brown vector */
+        }
+        .btn-large {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            text-decoration: none;
+        }
+        .mt-small {
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="glass-nav">
+        <div class="container nav-content">
+            <a href="index.html" class="brand-logo">
+                <i class="ph-fill ph-bezier-curve neon-icon"></i>
+                DOBO<span class="neon-text">DESIGN</span>
+            </a>
+            
+            <div class="nav-actions">
+                <div class="cart-wrapper" style="position: relative; display: inline-block; margin-right: 1rem;">
+                    <button class="icon-btn" id="cartToggleBtn" aria-label="Cart">
+                        <i class="ph ph-shopping-cart"></i>
+                        <span class="cart-badge" id="cartBadge">0</span>
+                    </button>
+                </div>
+                <a href="index.html" class="btn-primary">Back to Home</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="sample-page-wrapper">
+        <div class="sample-card glass-card fade-in">
+            <div class="product-badges mb-small" style="justify-content: center;">
+                <span class="badge badge-neon" style="position: relative;">Free Sample</span>
+            </div>
+            
+            <h1 class="mb-medium">Corporate Handshake <span class="gradient-text">Vector</span></h1>
+            
+            <img src="assets/handshake_vector.png" alt="Corporate Handshake Vector Free Sample" class="sample-img">
+            
+            <p class="text-muted mb-large">
+                A clean, minimalist vector illustration of a corporate handshake. Perfect for business cards, digital flyers, and corporate presentations. Fully editable and scalable natively in CorelDRAW (.CDR).
+            </p>
+            
+            <!-- Download Button -->
+            <!-- We link to a ZIP file which ensures the browser directly downloads it without previewing -->
+            <a href="assets/handshake_vector.zip" download="Corporate_Handshake_DOBODESIGN.zip" class="btn-primary btn-large w-full" style="text-decoration: none;">
+                <i class="ph ph-download-simple" style="font-size: 1.2rem;"></i> Download File
+            </a>
+            
+            <p class="text-muted mt-small" style="font-size: 0.85rem;">Includes high-res PNG and vector files (ZIP Format)</p>
+        </div>
+    </main>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h2 style="font-family: 'Inter', sans-serif; font-size: 1.25rem;">Your Cart</h2>
+            <button class="icon-btn close-cart" id="closeCartBtn"><i class="ph ph-x"></i></button>
+        </div>
+        <div class="cart-items" id="cartItemsContainer">
+            <div class="empty-cart-msg">Your cart is empty.</div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotalPrice">₹0</span>
+            </div>
+            <button class="btn-primary btn-large w-full">Checkout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

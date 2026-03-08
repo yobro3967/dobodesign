@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyberpunk Event Flyer | DOBODESIGN</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="glass-nav">
+        <div class="container nav-content">
+            <a href="index.html" class="brand-logo">
+                <i class="ph-fill ph-bezier-curve neon-icon"></i>
+                DOBO<span class="neon-text">DESIGN</span>
+            </a>
+            
+            <div class="search-bar">
+                <i class="ph ph-magnifying-glass"></i>
+                <input type="text" placeholder="Search templates, categories...">
+            </div>
+
+            <nav class="nav-links">
+                <a href="index.html#templates">Templates</a>
+                <a href="index.html#categories">Categories</a>
+                <a href="index.html#pricing">Pricing</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="icon-btn" aria-label="Wishlist"><i class="ph ph-heart"></i></button>
+                <div class="cart-wrapper" style="position: relative;">
+                    <button class="icon-btn" id="cartToggleBtn" aria-label="Cart">
+                        <i class="ph ph-shopping-cart"></i>
+                        <span class="cart-badge" id="cartBadge">0</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="product-page">
+        <!-- Breadcrumb -->
+        <div class="container breadcrumb">
+            <a href="index.html">Home</a> <i class="ph ph-caret-right"></i>
+            <a href="index.html#templates">Templates</a> <i class="ph ph-caret-right"></i>
+            <a href="#">Print / Posters</a> <i class="ph ph-caret-right"></i>
+            <span>Cyberpunk Event Flyer</span>
+        </div>
+
+        <section class="container product-split section-padding">
+            <!-- Left: Image Gallery -->
+            <div class="product-gallery">
+                <div class="main-image-wrapper glass-card">
+                    <img src="assets/template_flyer_1772892165695.png" alt="Event Flyer Preview" id="mainImage">
+                </div>
+                <div class="thumbnail-list">
+                    <div class="thumb active"><img src="assets/template_flyer_1772892165695.png" alt="Thumb 1"></div>
+                    <div class="thumb"><img src="assets/template_social_media_1772892126869.png" alt="Thumb 2"></div>
+                </div>
+            </div>
+
+            <!-- Right: Product Details (Sticky) -->
+            <div class="product-details-sidebar">
+                <div class="sticky-wrapper">
+                    <div class="product-badges mb-small">
+                        <span class="badge badge-purple" style="position: relative; left: 0; top: 0;">New Release</span>
+                    </div>
+                    <h1 class="product-page-title">Cyberpunk Event Flyer</h1>
+                    <div class="product-meta-header text-muted">
+                        <span class="rating"><i class="ph-fill ph-star"></i> 5.0 (42 reviews)</span>
+                        <span class="dot-separator">•</span>
+                        <span>By NeonCity Designs</span>
+                    </div>
+
+                    <div class="product-price-large">
+                        <span class="currency">₹</span>1299
+                    </div>
+
+                    <p class="product-description text-muted">
+                        A high-energy, futuristic flyer template perfect for DJ events, club nights, gaming tournaments, and tech meetups. Features stunning neon highlights and a dark mode aesthetic natively built in CorelDRAW.
+                    </p>
+
+                    <div class="product-features">
+                        <div class="feature-line"><i class="ph ph-check-circle neon-text"></i> A4 Size (8.27" x 11.69" with bleed)</div>
+                        <div class="feature-line"><i class="ph ph-check-circle neon-text"></i> Fully vector, scalable elements</div>
+                        <div class="feature-line"><i class="ph ph-check-circle neon-text"></i> CMYK Print-Ready (300 DPI)</div>
+                        <div class="feature-line"><i class="ph ph-check-circle neon-text"></i> Organized layers and folders</div>
+                    </div>
+
+                    <div class="compatibility-box glass-card mb-large">
+                        <div class="comp-item">
+                            <i class="ph ph-file-vector"></i>
+                            <div>
+                                <h5>File Format</h5>
+                                <span>.CDR, .PDF</span>
+                            </div>
+                        </div>
+                        <div class="comp-item">
+                            <i class="ph ph-desktop"></i>
+                            <div>
+                                <h5>Compatibility</h5>
+                                <span>CorelDRAW 2020 or newer</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-actions">
+                        <button class="btn-primary btn-large w-full mb-small"><i class="ph ph-download-simple"></i> Download Now</button>
+                        <button class="btn-secondary btn-large w-full add-cart"><i class="ph ph-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Related Templates -->
+        <section class="related-templates section-padding bg-surface">
+            <div class="container">
+                <div class="section-header">
+                    <h2>You might also <span class="gradient-text">Like</span></h2>
+                </div>
+                <!-- Mini product grid -->
+                <div class="product-grid">
+                     <!-- Repurposing Social Media -->
+                     <div class="product-card glass-card">
+                        <div class="product-img-wrapper">
+                            <a href="product.html">
+                                <img src="assets/template_social_media_1772892126869.png" alt="Social Media Kit" class="product-img">
+                                <div class="product-overlay">
+                                    <button class="btn-primary product-action-btn">View Details</button>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title"><a href="product.html">Neon Social Media Kit</a></h3>
+                            <div class="product-meta">
+                                <span class="product-price">₹999</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <!-- Re-using footer from index.html (simplified for brevity) -->
+        <div class="container footer-bottom">
+            <p>&copy; 2026 DOBODESIGN. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h2 style="font-family: 'Inter', sans-serif; font-size: 1.25rem;">Your Cart</h2>
+            <button class="icon-btn close-cart" id="closeCartBtn"><i class="ph ph-x"></i></button>
+        </div>
+        <div class="cart-items" id="cartItemsContainer">
+            <div class="empty-cart-msg">Your cart is empty.</div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotalPrice">₹0</span>
+            </div>
+            <button class="btn-primary btn-large w-full">Checkout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
